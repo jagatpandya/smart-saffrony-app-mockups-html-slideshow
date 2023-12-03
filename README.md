@@ -1,4 +1,5 @@
 # Smart Saffrony App Prototype Showcase
+In our design engineering project, I created visual mockups for the Smart Saffrony Institute app. Check out these designs in an HTML image slideshow, giving you a dynamic look into the innovative Smart Saffrony concept.
 
 ![Screenshot](saffrony-app-mockups.gif?raw=true)
 
