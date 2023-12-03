@@ -9,25 +9,29 @@
             margin: 0;
             overflow: hidden;
         }
+
         #slideshow-container {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        img {
             width: 100%;
-            max-width: 928px;
-            height: 100vh; /* Set height to 80% of viewport height */
-            margin: auto;
+            height: 100%;
+            object-fit: cover;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-        }
-        img {
-            width: 100%;
-            height: 75vh; /* Set height to 100% of viewport height */
-            object-fit: cover; /* Ensure the image covers the entire container */
             display: none;
         }
+
         .github-corner:hover .octo-arm {
             animation: octocat-wave 560ms ease-in-out;
         }
+
         @keyframes octocat-wave {
             0%, 100% {
                 transform: rotate(0);
@@ -39,10 +43,12 @@
                 transform: rotate(10deg);
             }
         }
-        @media (max-width:500px) {
+
+        @media (max-width: 500px) {
             .github-corner:hover .octo-arm {
                 animation: none;
             }
+
             .github-corner .octo-arm {
                 animation: octocat-wave 560ms ease-in-out;
             }
@@ -54,18 +60,8 @@
     <!-- Add your image sources here -->
     <img src="images/saffrony-app-mockup-01.png" alt="Image 1">
     <img src="images/saffrony-app-mockup-02.png" alt="Image 2">
-    <img src="images/saffrony-app-mockup-03.png" alt="Image 3">
-    <img src="images/saffrony-app-mockup-04.png" alt="Image 4">
-    <img src="images/saffrony-app-mockup-05.png" alt="Image 5">
-    <img src="images/saffrony-app-mockup-06.png" alt="Image 6">
-    <img src="images/saffrony-app-mockup-07.png" alt="Image 7">
-    <img src="images/saffrony-app-mockup-08.png" alt="Image 8">
-    <img src="images/saffrony-app-mockup-09.png" alt="Image 9">
-    <img src="images/saffrony-app-mockup-10.png" alt="Image 10">
-    <img src="images/saffrony-app-mockup-11.png" alt="Image 11">
-    <img src="images/saffrony-app-mockup-12.png" alt="Image 12">
-    <img src="images/saffrony-app-mockup-13.png" alt="Image 13">
-    <img src="images/saffrony-app-mockup-14.png" alt="Image 14">
+    <!-- Add more images as needed -->
+
     <script>
         let slideIndex = 0;
         const images = document.querySelectorAll('img');
@@ -75,6 +71,7 @@
             slideIndex = (slideIndex + 1) % images.length;
             images[slideIndex].style.display = 'block';
         }
+
         setInterval(showSlides, 1500); // Change the interval (in milliseconds) as needed
     </script>
 </div>
