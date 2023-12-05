@@ -9,23 +9,35 @@
     <title>Smart Saffrony</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
     <style>
-        body {
-      		margin: 0;
-      		display: flex;
-      		justify-content: center;
-      		align-items: center;
-      		height: 100%;
-      		overflow: hidden;
-    	}
-    	#slideshow-container {
-      		max-width: 100%;
-	  		position: relative; /* Stack Overflow Recommendation */
-    	}
-    	img {
-      		width: 100%;
-      		height: auto;
-      		display: none;
-    	}
+        html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#slideshow-container {
+  max-width: 100%;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+/* Responsive positioning for different device sizes */
+@media (max-width: 768px) {
+  #slideshow-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
     	/* Responsive positioning for different device sizes 
     	@media (max-width: 768px) {
       		#slideshow-container {
