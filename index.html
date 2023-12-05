@@ -9,45 +9,34 @@
     <title>Smart Saffrony</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
     <style>
-        html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-#slideshow-container {
-  max-width: 100%;
-  position: relative;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: none;
-}
-
-/* Responsive positioning for different device sizes */
-@media (max-width: 768px) {
-  #slideshow-container {
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-    	/* Responsive positioning for different device sizes 
-    	@media (max-width: 768px) {
-      		#slideshow-container {
-        		position: absolute;
-        		top: 80%;
-        		left: 80%;
-        		transform: translate(-50%, -50%);
-      		}
-    	} */
+        body {
+  			height: 100%;
+  			margin: 0;
+			padding: 0;
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+  			overflow: hidden;
+		}
+		#slideshow-container {
+  			max-width: 100%;
+  			position: relative;
+		}
+		img {
+  			width: 100%;
+  			height: auto;
+  			display: none;
+		}
+		@media (max-width: 768px) {
+  			#slideshow-container {
+    			max-width: 80%
+    			position: absolute;
+    			top: 50%;
+    			left: 50%;
+    			transform: translate(-50%, -50%);
+		  	}
+		}
+		/* gitHub corner styling */
         .github-corner:hover .octo-arm {
 	  		animation: octocat-wave 560ms ease-in-out;
 	    }
