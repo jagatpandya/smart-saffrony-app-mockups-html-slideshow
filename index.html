@@ -10,32 +10,24 @@
     <link rel="icon" href="images/favicon.png" type="image/png">
     <style>
         html, body {
-  			height: 100%;
-  			margin: 0;
-			padding: 0;
-  			display: flex;
-  			justify-content: center;
-  			align-items: center;
-  			overflow: hidden;
-		}
-		#slideshow-container {
-  			max-width: 100%;
-  			position: relative;
-		}
-		img {
-  			width: 100%;
-  			height: auto;
-  			display: none;
-		}
-		@media (max-width: 768px) {
-  			#slideshow-container {
-    			max-width: 80%
-    			position: absolute;
-    			top: 50%;
-    			left: 50%;
-    			transform: translate(-50%, -50%);
-		  	}
-		}
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #slideshow-container {
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
 		/* gitHub corner styling */
         .github-corner:hover .octo-arm {
 	  		animation: octocat-wave 560ms ease-in-out;
