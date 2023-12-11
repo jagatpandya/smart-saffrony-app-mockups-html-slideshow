@@ -16,14 +16,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-			overflow: hidden;
         }
         #slideshow-container {
             max-width: 500px; 
             width: 100%;
             height: 600px;
             overflow: hidden;
-            position: relative;
         }
 		img {
             width: 100%;
@@ -31,25 +29,19 @@
             object-fit: cover;
             display: none;
         }
+		/* Styles for smartphones (min-width: 320px, max-width: 480px) */
 		@media (min-width: 320px) and (max-width: 480px) { 
             #slideshow-container {
-				width: 100%;
-                height: 70vh;
-				overflow: hidden; 
+				/* Adjusting height for smartphones (vh used for landscape) */
+                height: 80vh; 
             }
-			img {
-        		object-fit: contain;
-    		}
         }
+		/* Styles for tablets (min-width: 768px, max-width: 1024px) */
         @media (min-width: 768px) and (max-width: 1024px) {
             #slideshow-container { 
-				width: 100%;
-                height: 70vh;
-				overflow: hidden; 
+				/* Adjusting height for tablets (vh used for landscape) */
+                height: 100vh;
             }
-			img {
-        		object-fit: contain;
-    		}
         }
 		/* gitHub corner styling */
         .github-corner:hover .octo-arm {
