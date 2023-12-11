@@ -1,5 +1,5 @@
 # Smart Saffrony App Prototype Showcase
-In our design engineering project, I created visual mockups for the Smart Saffrony Institute app prototype. Check out these designs in an HTML image slideshow, giving you a dynamic look into the innovative Smart Saffrony concept.
+In our design engineering academic subject, the task was to create prototypes within assigned domains. For this, I selected education services as the domain and designed visual mockups for the Smart Saffrony Institute app prototype. Explore these designs in an HTML image slideshow, offering a dynamic preview of the innovative Smart Saffrony concept.
 
 ![Screenshot](saffrony-app-mockups.gif?raw=true)
 
